@@ -1,22 +1,33 @@
-import Navbar from "./components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import KatalogTemplate from "./components/Katalog";
 import Testimoni from "./components/Testimoni";
 import Request from "./components/Request";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import Berita from "./pages/Berita"; // <-- halaman baru
 
-function App() {
+function HomePage() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-
       <Hero />
       <KatalogTemplate />
       <Request />
       <Testimoni />
       <Footer />
-      
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/berita" element={<Berita />} />
+      </Routes>
+    </Router>
   );
 }
 

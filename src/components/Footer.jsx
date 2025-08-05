@@ -2,7 +2,7 @@ import { FaInstagram, FaWhatsapp, FaGlobe } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 py-8  border-t border-gray-200">
+    <footer className="bg-gray-100 py-8  border-t border-gray-200 ">
       <div className="container mx-auto px-4 text-center">
         <h5 className="text-2xl font-bold text-gray-800">NadhimDev</h5>
         <p className="text-gray-600 mt-2 max-w-xl mx-auto">
