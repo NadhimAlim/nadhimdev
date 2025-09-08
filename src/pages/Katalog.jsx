@@ -181,7 +181,6 @@ export default function KatalogTemplate() {
           </div>
 
           {/* Request Harga Section */}
-          {/* Request Harga Section */}
           <section className=" py-20 mt-20">
             <div className="max-w-7xl mx-auto px-4 text-center">
               <h2 className="text-3xl font-bold mb-6 text-gray-900">
