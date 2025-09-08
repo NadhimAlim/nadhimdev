@@ -2,45 +2,54 @@ import { useState } from "react";
 
 export default function Hero() {
   return (
-    <section id="beranda" className="pt-24 md:pt-32 bg-gray-100">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+    <section
+      id="beranda"
+      className="relative pt-24 pb-24 md:pt-32 md:pb-32 bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: "url('/img/banner.png')" }}
+    >
+      {/* Overlay gelap transparan */}
+      <div className="absolute inset-0 bg-black/40"></div>
+
+      {/* Konten */}
+      <div className="relative max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12 p-6">
         {/* Teks */}
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Jual Template Website{" "}
-            <span className="text-blue-700">Modern & Profesional</span>
+        <div className="flex-1 text-center md:text-left text-white">
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+            Bangun{" "}
+            <span className="text-yellow-400">
+              Skill Digital & Karier Teknologi
+            </span>
           </h1>
-          <p className="mt-4 text-lg text-gray-600">
-            Dapatkan berbagai template website siap pakai untuk bisnismu. Desain
-            menarik, harga terjangkau, dan mudah disesuaikan!
+          <p className="mt-4 text-lg text-gray-200">
+            Belajar coding dengan cara praktis, ikuti kelas teknologi interaktif,
+            dan dapatkan wawasan terbaru seputar dunia IT. Mulai perjalananmu
+            menuju generasi digital yang siap bersaing di era masa depan!
           </p>
           <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#katalog"
-              className="bg-blue-700 hover:bg-blue-800 text-white font-semibold px-6 py-3 rounded-md transition shadow"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md transition shadow"
             >
-              Lihat Katalog
+              Mulai Belajar
             </a>
             <a
-              href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20template%20anda"
+              href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20dengan%20kelas%20teknologi%20anda"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-6 py-3 rounded-md transition shadow"
             >
-              Pesan Sekarang
+              Gabung Komunitas
             </a>
           </div>
         </div>
 
         {/* Ilustrasi */}
         <div className="flex-1 flex justify-center">
-          {/* Wrapper gradasi */}
           <div className="p-[2px] rounded-xl bg-gradient-to-r from-blue-500 via-yellow-400 to-yellow-500 w-full max-w-sm transition-all duration-500 hover:rotate-[-1deg] hover:scale-105 hover:shadow-2xl transform">
-            {/* Isi kartu */}
             <div className="relative bg-white rounded-xl overflow-hidden w-full h-full shadow-lg">
               <img
                 src="/img/foto.png"
-                alt="Ilustrasi Template Website"
+                alt="Ilustrasi Website Edukasi"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/70 to-transparent px-4 py-3">
@@ -48,7 +57,7 @@ export default function Hero() {
                   Muhammad Nadhim Alim
                 </h3>
                 <p className="text-white text-sm">
-                  Fullstack Web Developer & Designer
+                  Founder & CEO of DevNalim
                 </p>
               </div>
             </div>
@@ -58,3 +67,5 @@ export default function Hero() {
     </section>
   );
 }
+
+

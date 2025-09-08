@@ -2,43 +2,37 @@ import { useState } from "react";
 
 const data = [
   {
-    question: "Apakah template ini bisa di-custom sesuai brand saya?",
-    detail:
-      "Ingin menyesuaikan dengan warna dan logo bisnis saya.",
+    question: "Apa keuntungan bergabung dengan komunitas teknologi ini?",
     answer:
-      "Ya, kamu bisa ubah warna, font, dan konten sesuai brand kamu. Kami juga bisa bantu custom dengan biaya tambahan.",
+      "Kamu bisa menambah relasi, belajar tren teknologi terbaru, dan berkolaborasi dengan sesama anggota.",
   },
   {
-    question: "Apakah pembayarannya sekali saja atau berlangganan?",
-    detail: "Takut kena biaya bulanan atau tahunan.",
+    question: "Apakah komunitas ini berbayar?",
     answer:
-      "Tidak, kamu hanya membayar sekali saja dan bisa gunakan template selamanya.",
+      "Tidak, komunitas ini gratis untuk semua orang yang tertarik dengan teknologi.",
   },
   {
-    question: "Apakah saya bisa konsultasi setelah pembelian?",
-    detail: "Saya butuh bantuan setelah beli.",
+    question: "Apakah ada event rutin yang diadakan?",
     answer:
-      "Tentu! Kami sediakan support via WhatsApp untuk membantu install dan modifikasi ringan.",
+      "Ya, kami mengadakan meetup, workshop, dan diskusi online setiap bulan.",
   },
   {
-    question: "Apakah bisa digunakan tanpa koneksi internet?",
-    detail: "Saya ingin akses offline juga.",
+    question: "Apakah pemula bisa ikut bergabung?",
     answer:
-      "Bisa. Setelah di-download dan dipasang, template bisa digunakan secara offline.",
+      "Tentu! Komunitas ini terbuka untuk semua level, baik pemula maupun profesional.",
   },
   {
-    question: "Apakah bisa digunakan untuk lebih dari 1 website?",
-    detail: "Saya punya beberapa bisnis online.",
+    question: "Bagaimana cara saya ikut berkontribusi?",
     answer:
-      "Ya, template bisa digunakan di banyak website selama kamu pemiliknya sendiri.",
+      "Kamu bisa berbagi artikel, jadi pembicara di event, atau membantu project open-source komunitas.",
   },
   {
-    question: "Apakah cocok untuk pemula tanpa pengalaman coding?",
-    detail: "Saya belum pernah bikin website sebelumnya.",
+    question: "Apakah ada dukungan untuk networking dan karir?",
     answer:
-      "Sangat cocok! Template ini dirancang user-friendly dan tidak butuh skill teknis. Panduan lengkap tersedia.",
+      "Ya, kami menyediakan channel khusus untuk peluang kerja, magang, dan kolaborasi proyek.",
   },
 ];
+
 
 export default function TestimoniAccordion() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -48,7 +42,7 @@ export default function TestimoniAccordion() {
   };
 
   return (
-    <section id="testimoni" className="py-20 bg-gray-100">
+    <section id="testimoni" className="py-20 bg-[#F3FAFB] text-black">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center text-blue-700 mb-10">
           Apa Kata Mereka?
